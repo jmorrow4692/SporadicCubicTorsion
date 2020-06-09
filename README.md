@@ -1,8 +1,7 @@
 Here is code verifying the computations and theorems of the manuscript 
-                                          
+
                                           "Sporadic Cubic Torsion" 
-                                          
-             By Maarten Derickx, Anastassia Etropolski, Mark van Hoeij, Jackson S. Morrow, and David Zureick-Brown
+    By Maarten Derickx, Anastassia Etropolski, Mark van Hoeij, Jackson S. Morrow, and David Zureick-Brown
 
 In order to utilize this code, one needs to do the following first:
 
