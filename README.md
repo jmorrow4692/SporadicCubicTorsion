@@ -4,6 +4,8 @@ Here is code verifying the computations and theorems of the manuscript
                                           
     By Maarten Derickx, Anastassia Etropolski, Mark van Hoeij, Jackson S. Morrow, and David Zureick-Brown
 
+There are 3 folders in this repository. One corresponding to each computer algebra program we use: Magma, Sage, and Maple.
+
 In order to utilize this code, one needs to do the following first:
 
 0. Upload the Magma files (The two latter .m files come Ozman--Siksek "Quadratic points on modular curves")
