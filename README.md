@@ -17,7 +17,6 @@ In order to utilize this code, one needs to do the following:
   - cuspidal_classgroup.py
   - maartens_sage_functions.py
   - modular_unit_divisors.py
-(Alternatively, one could download the .zip file mdsage.zip and unzip this in your local directory).
 
 Once the above files are loaded, you will be able to run the below code verifying claims found in our paper.
 
