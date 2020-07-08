@@ -1,0 +1,24 @@
+This is file cusp_divisors_program at:
+
+	www.math.fsu.edu/~hoeij/files/X1N
+
+There is now also a preprint:
+
+	https://arxiv.org/pdf/2004.13644.pdf
+
+that proves this program in two ways, one proof is through Puiseux
+expansions, and the other is through Siegel functions.
+
+Note that the CuspidalClassGroupStructure computed here is known in older
+papers. What's important about this cusp_divisors_program, or alternatively,
+the table cusp_divisors at the above URL, is that it gives divisors not of
+products of Siegel functions as in prior papers, but rather, of rational
+functions in terms of coordinates.  This way, we have not only the explicit
+divisors of the modular units, but we can also convert them to explicit
+functions.
+
+One application is that if we start with a basis of the divisors, then
+we can select those that are invariant under H, then convert those to
+modular units, which are then known explicitly so that one can compute an
+algebraic relation between them, see the file:  FindModel_XH_45_input
+

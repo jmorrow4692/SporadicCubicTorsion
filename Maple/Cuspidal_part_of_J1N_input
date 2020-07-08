@@ -1,0 +1,57 @@
+interface(screenwidth = 200):
+Phi := proc(d)
+	numtheory[phi](d) / d
+end:
+
+IG := proc(i,N)
+	if N = 2*i and member(i,[1,2]) then
+		1
+	else
+		N/igcd(i,N)
+	fi
+end:
+
+DegreeCusp := proc(i,N)
+	local d;
+	d := numtheory[phi]( igcd(i,N) );
+	if i=0 or i=N/2 then
+		ceil(d/2)
+	else
+		d
+	fi
+end:
+
+MinFormula := proc(N,t)
+	if N < 2 then
+		error "wrong input"
+	elif N = 2 then
+		4 * t - 1
+	elif N = 3 then
+		9 * min(t, 1/3) - 8*t
+	else
+		add(N * Phi(igcd(i,N)) * (min(t, i/N) - 4*(i/N)*(1-i/N)*t), i=1..iquo(N-1, 2))
+	fi
+end:
+
+Divisor_F_bc := proc(N,k)
+	local t, i, f;
+	f := MinFormula(k, t);
+	[seq(eval(f, t=i/N) * IG(i,N), i=0..floor(N/2))]
+end:
+
+L_bc := proc(N)
+	local k;
+	[seq(Divisor_F_bc(N,k), k=2..floor(N/2)+1)]
+end:
+
+CuspidalClassGroupStructure := proc(N)
+	local M,i;
+	M := LinearAlgebra[SmithForm](Matrix(L_bc(N)));
+	subs(1=NULL,[seq(M[i,i], i=1..floor(N/2))])
+end:
+
+
+for i from 10 to 100 do
+	lprint(Cuspidal_part_of_J1(i) = CuspidalClassGroupStructure(i))
+od:
+
