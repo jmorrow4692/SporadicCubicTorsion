@@ -24,6 +24,7 @@ Once the above files are loaded, you will be able to run the below code verifyin
 In the Magma folder, one finds:
   - master-ranks.m (Magma code verifying the ranks of modular Jacobians computations from Section 3)
   - master-N.m (Magma code for the computations in Sections 6 and 7 of the paper can be found at. For example, the file master-22.m corresponds to code verifying       the case of X1(22)).
+  - ModelForXH45.txt (A text file with the model for the modular curve XH(45) from Subsection 6.7 and a way to lift a cubic point on XH(45) back to X1(45))
 
 In the Sage folder, one finds:
   - torsionComputations.py (Sage code verifying the cuspidal torsion computations from Section 4).
