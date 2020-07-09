@@ -8,7 +8,7 @@ There are 3 folders in this repository. One corresponding to each computer algeb
 
 In order to utilize this code, one needs to do the following:
 
-0. Download the Magma files (The two latter .m files come Ozman--Siksek "Quadratic points on modular curves" https://arxiv.org/abs/1806.08192)
+0. Download the following Magma files (The two latter .m files come Ozman--Siksek "Quadratic points on modular curves" https://arxiv.org/abs/1806.08192)
     - functions.m
     - modEqns.m 
     - quadPts.m 
