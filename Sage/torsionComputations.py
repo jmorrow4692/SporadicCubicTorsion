@@ -400,5 +400,5 @@ J232 = rational_cuspidal_classgroup(G232)
 J232.invariants()  # (2, 2, 2, 4, 4, 24, 120, 23280, 23280)
 d = J232.cardinality() # 199787544576000
 upper_bound_index_cusps_in_JG_torsion(G232,d) # 4
-do_cusps_generate_J_H_torsion(G232,bound = 24) $ (True, (2, 2, 2, 4, 4, 24, 120, 23280, 23280))
+do_cusps_generate_J_H_torsion(G232,bound = 24) # (True, (2, 2, 2, 4, 4, 24, 120, 23280, 23280))
 
