@@ -322,8 +322,9 @@ upper_bound_index_cusps_in_JG_torsion(GammaH(45,[ 1, 4, 16, 19, 31, 34 ]),ration
 
 
 #########################################################################
+# Proof of Proposition 4.16 
 # Cuspidal torsion, Hecke bounds, and additional arguments on J1(2,2N)
-# Note that X_{Delta}(4N) \cong􏰛 X1(2,2N), with Delta := {±1, ±(2N + 1)} 
+# Note that X_{Delta}(4N) \cong X1(2,2N), with Delta := {±1, ±(2N + 1)} 
 #########################################################################
 
 G210 = GammaH(20,[1,-1,11,-11]);
