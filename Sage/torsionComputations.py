@@ -22,11 +22,6 @@ from cuspidal_classgroup import (intersection,
 
 _sage_const_1 = Integer(1);
 
-# In the below computations, we actually work with the modular curve $X_{\mu}(N)$ (and its quotients) rather than $X_1(N)$. 
-# Note that there is an isomorphism $X_{\mu}(N) \to X_1(N)$ that sends the cusps to the cusps; isomorphism is $(E,f: \mu_N -> E[N]) to (E/im(f),f^{\vee}: Z/NZ -> E[N]/im(f))$. 
-# The reason for working with $X_{\mu}(N)$ rather than $X_1(N)$ is that when using the model $X_{\mu}(N)$ the cusp $\infty$ in $\H^*$ becomes rational, and hence many computations become easier.
-# We also note that the isomorphism $X_{\mu}(N) \to X_1(N)$ does not preserve Hecke operators, and so we use the Hecke operators $T_q - \langle q \rangle - q$ to kill the prime to $q$ torsion in $J_{\mu}(N)(\Q)$ (cf.~\cite[page 87]{DiamondIm:ModularCurves}).
-
 def do_cusps_generate_J_H_torsion(G,bound=60):
     N = G.level()
     M=ModularSymbols(G);
